@@ -1,0 +1,38 @@
+.transactionHistory {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionHistoryTitle {
+    background-color: rgb(59, 150, 176);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+td,
+th {
+    width: calc(800px / 3);
+}
+
+.transactions {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+
+.lightBack {
+    composes: transactions;
+    background-color: white;
+}
+
+.darkBack {
+    composes: transactions;
+    background-color: rgb(220, 220, 220);
+}
